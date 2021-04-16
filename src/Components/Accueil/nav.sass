@@ -1,0 +1,24 @@
+.myM
+    color: $myRed
+    margin: 0
+    span
+        text-decoration: none !important
+.collapse
+    display: flex
+    justify-content: flex-end
+.navbar-nav
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 50%
+
+@media ( max-width: 600px  )
+    .collapse
+        justify-content: start
+
+@media ( max-width: 769px  )
+    .collapse
+        justify-content: center
+        button
+            margin-top: 10%
+            width: 75%

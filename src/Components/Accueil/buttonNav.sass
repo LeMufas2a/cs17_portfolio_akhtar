@@ -1,0 +1,75 @@
+button
+    font-weight: bold
+    width: 100px
+    color: white !important
+    position: relative
+    letter-spacing: 2px
+    transition: 0.5s
+    &:hover
+        color: white
+        transition: 1s
+        transform: translateY(-25%) translateX(-5%)
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 10px
+        height: 10px
+        border-top: 2px solid $myRed
+        border-left: 2px solid $myRed
+    &::after
+        content: ''
+        position: absolute
+        bottom: 0px
+        right: 0px
+        width: 10px
+        height: 10px
+        border-bottom: 2px solid $myRed
+        border-right: 2px solid $myRed
+button:hover::before
+    width: 100%
+    height: 100%
+    transition: 1s
+    box-shadow: 5px 5px 5px $myRed
+button:hover::after
+    width: 100%
+    height: 100%
+    transition: 1s
+    border-bottom: 2px solid $myRed
+    border-right: 2px solid $myRed
+
+/** Button 2 **/
+.button2
+    &:before
+        border-top: 2px solid $myBlue
+        border-left: 2px solid $myBlue
+    &:after
+        border-bottom: 2px solid $myBlue
+        border-right: 2px solid $myBlue
+
+.button2:hover::before
+    box-shadow: 5px 5px 5px $myBlue
+    border-top: 2px solid $myBlue
+    border-left: 2px solid $myBlue
+.button2:hover::after
+    border-bottom: 2px solid $myBlue
+    border-right: 2px solid $myBlue
+
+/** Button 3 **/
+
+.button3
+    &:before
+        border-top: 2px solid $myGreen
+        border-left: 2px solid $myGreen
+    &:after
+        border-bottom: 2px solid $myGreen
+        border-right: 2px solid $myGreen
+
+.button3:hover::before
+    box-shadow: 5px 5px 5px $myGreen
+    border-top: 2px solid $myGreen
+    border-left: 2px solid $myGreen
+.button3:hover::after
+    border-bottom: 2px solid $myGreen
+    border-right: 2px solid $myGreen
